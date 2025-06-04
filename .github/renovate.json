@@ -7,5 +7,5 @@
   "labels": ["Renovate Dependencies"],
   "prConcurrentLimit": 5,
   "schedule": ["after 7pm"],
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "conflicted"
 }
