@@ -4,6 +4,7 @@
     "local>hmcts/.github:renovate-config",
     "local>hmcts/.github//renovate/automerge-minor"
   ],
+  "labels": ["Renovate Dependencies"],
   "prConcurrentLimit": 5,
   "schedule": ["after 7pm"],
   "rebaseWhen": "behind-base-branch"
