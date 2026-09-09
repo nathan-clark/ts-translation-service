@@ -1,11 +1,1 @@
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>hmcts/.github:renovate-config",
-    "local>hmcts/.github//renovate/automerge-minor"
-  ],
-  "labels": ["Renovate Dependencies"],
-  "prConcurrentLimit": 5,
-  "schedule": ["after 7pm"],
-  "rebaseWhen": "conflicted"
-}
+%%
