@@ -5,7 +5,23 @@
     "local>hmcts/.github//renovate/automerge-minor"
   ],
   "labels": ["Renovate Dependencies"],
-  "prConcurrentLimit": 5,
-  "schedule": ["after 7pm"],
-  "rebaseWhen": "conflicted"
+  "schedule": ["* 16-19 * * 1-5"],
+  "automergeSchedule": ["* 14-18 * * 1-4"],
+  "platformAutomerge": false,
+  "packageRules": [
+    {
+      "description": "Always update BEFTA dependencies to latest stable release",
+      "matchManagers": ["gradle"],
+      "matchDepNames": [
+        "ccd-test-definitions",
+        "befta-fw"
+      ],
+      "allowedVersions": "/^[0-9]+\\.[0-9]+\\.[0-9]+$/",
+      "prPriority": 100,
+      "schedule": ["at any time"],
+      "automerge": false,
+      "dependencyDashboardApproval": false,
+      "minimumReleaseAge": null
+    }
+  ]
 }
